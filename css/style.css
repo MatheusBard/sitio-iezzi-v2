@@ -1,6 +1,10 @@
+html {
+  font-size: 16px;
+}
+
 body {
   min-height: 100vh;
-  background-color: #333;
+  font-family: var(--ff-main);
 }
 
 a, 
@@ -8,6 +12,18 @@ a:hover,
 a:focus {
   color: #fff;
   text-decoration: none;
+}
+
+p {
+  color: var(--clr-gray);
+}
+
+h2 {
+  font-size: var(--fs-3);
+  font-family: var(--ff-title);
+  font-weight: 400;
+  letter-spacing: .125em;
+  text-transform: uppercase;
 }
 
 .container {
@@ -18,10 +34,34 @@ a:focus {
   margin-right: auto;
 }
 
-.header {
-  display: flex;
+.header-mobile {
+  position: relative;
+  height: var(--header-height-mobile);
   width: 100%;
-  height: var(--header-height)
+  background-color: #333;
+  color: var(--clr-white);
+}
+
+.header-desktop {
+  display: none;
+}
+
+.menu-toggle {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: inherit;
+}
+
+.header-mobile__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: 96%;
+  transform: translate(-50%, -50%);
 }
 
 .nav-wrapper {
@@ -62,8 +102,104 @@ a:focus {
   align-items: center;
 }
 
+.text-block > p {
+  margin-top: .5rem;
+}
+
+.sitio,
+.espaço {
+  display: flex;
+  flex-direction: column;
+}
+
+.sitio > *,
+.espaco > * {
+  flex-basis: 100%;
+  
+  padding-top: 7.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.img-wrapper {
+  padding-bottom: 5rem;
+}
+
+.img-ratio {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.carrosel {
+  height: calc(100vh - var(--header-height-mobile));
+  width: 100%;
+  background-image: url('../assets/imgs/image3.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galeria {
+  padding-top: 7.5rem;
+}
+
+.img-grid__item {
+  margin-bottom: 2.5rem;
+  padding: 0 1.25rem;
+}
+
+.footer {
+  padding-top: 7.5rem;
+  padding-bottom: 4rem;
+  background-color: var(--clr-light-gray);
+}
+
+@media (min-width: 768px) {
+  .img-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .img-grid__item {
+    width: 50%;
+  }
+}
+
 @media (min-width: 992px) {
+  .header-mobile {
+    display: none;
+  }
+  
+  .header-desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: var(--header-height-desktop);
+  }
+
+  .header-desktop__logo {
+    flex-shrink: 0;
+    width: 10rem;
+  }
+
+  .sitio {
+    flex-direction: row;
+  }
+
   .container {
     max-width: 960px;
+  }
+
+  .img-grid__item {
+    width: 33.333%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
 }

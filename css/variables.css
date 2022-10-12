@@ -2,15 +2,18 @@
   /* Colors */
   --clr-white: #fff;
   --clr-light-gray: #f3f3f3;
+  --clr-gray: #777;
   --clr-dark-gray: #333;
   --clr-black: #222;
 
   /* Fonts */
-  --ff-main: ;
+  --ff-main: 'Spectral', serif;
+  --ff-title: 'Spectral SC', serif;
 
   /* Font Sizes */
   --fs-1: 1rem;
   --fs-2: 2rem;
+  --fs-3: 2.5rem;
 
   /* Spacing */
   --space-1: 1rem;
@@ -18,6 +21,7 @@
   --space-3: 2.5rem;
 
   /* Element Sizes */
-  --header-height: 7.5rem;
+  --header-height-desktop: 7.5rem;
+  --header-height-mobile: 4.5rem;
 
 }

@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="css/andy-modern-css-reset.css">
   <link rel="stylesheet" href="css/variables.css">
@@ -12,7 +18,13 @@
   <title>Sítio Iezzi V2</title>
 </head>
 <body>
-  <header class="header flex">
+  <header class="header-mobile container">
+    <button class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <img class="header-mobile__logo" src="./assets/imgs/logoBranca.png" alt="">
+  </header>
+  <header class="header-desktop">
     <div class="container">
       <div class="nav-wrapper">
         <nav class="nav nav--left">
@@ -30,7 +42,7 @@
         </nav>
       </div>
     </div>
-    <a href="">
+    <a class="header-desktop__logo" href="">
       <img src="./assets/imgs/logoBranca.png" alt="" srcset="">
     </a>
     <div class="container">
@@ -52,13 +64,71 @@
     </div>
   </header>
   <main>
-    <div class="carrosel"></div>
-    <div class="sitio"></div>
+    <section class="carrosel">
+
+    </section>
+    <section class="container sitio">
+      <div class="text-block">
+        <h2>O Sítio</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus arcu ben dum at varius. Ut porttitor leo a diam. Pe na tibus et magnis dis. Ut enim ad minim veniam, quis no strud ex ercitation ullamco laboris nisi ut aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit.
+        </p>
+        <p>
+          Excepteur sint occaecat cupidatat non proident. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue eget dolor.
+        </p>
+      </div>
+      <div class="img-wrapper">
+        <img class="img-ratio" src="./assets/imgs/image2.jpeg" alt="" srcset="">
+      </div>
+    </section>
     <div class="video"></div>
     <div class="comentarios"></div>
-    <div class="galeria"></div>
-    <div class="espaco"></div>
+    <section class="galeria">
+      <div class="container">
+        <h2>Galeria</h2>
+        <div class="img-grid">
+          <div class="img-grid__item"><img class="img-ratio" src="./assets/imgs/image1.jpeg" alt=""></div>
+          <div class="img-grid__item"><img class="img-ratio" src="./assets/imgs/image2.jpeg" alt=""></div>
+          <div class="img-grid__item"><img class="img-ratio" src="./assets/imgs/image3.jpeg" alt=""></div>
+          <div class="img-grid__item"><img class="img-ratio" src="./assets/imgs/image3.jpeg" alt=""></div>
+          <div class="img-grid__item"><img class="img-ratio" src="./assets/imgs/image2.jpeg" alt=""></div>
+          <div class="img-grid__item"><img class="img-ratio" src="./assets/imgs/image1.jpeg" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <section class="espaco">
+      <div class="container">
+        <div class="text-block">
+          <h2>O Espaço</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus arcu ben dum at varius. Ut porttitor leo a diam. Pe na tibus et magnis dis. Ut enim ad minim veniam, quis no strud ex ercitation ullamco laboris nisi ut aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit.
+          </p>
+          <p>
+            Excepteur sint occaecat cupidatat non proident. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue eget dolor.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__logo">
+          <img src="./assets/imgs/logoPreta.png" alt="" srcset="">
+        </div>
+        <div class="contato">
+          35 W 46nd Street Portugal
+          aperitif@qodeintaractive.com
+          +(123) 456-7890-456-7890
+        </div>
+        <div class="sobre-nos">
+          Story about us
+          Our latest blog posts
+          Purchase our products
+          Keep in touch
+        </div>
+      </div>
+    </div>
+  </footer>  
 </body>
 </html>
