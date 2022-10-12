@@ -185,6 +185,10 @@ h2 {
     width: 10rem;
   }
 
+  .carrosel {
+    height: 100vh;
+  }
+
   .sitio {
     flex-direction: row;
   }
