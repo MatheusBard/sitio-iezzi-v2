@@ -22,7 +22,7 @@
     <button class="menu-toggle">
       <i class="fa-solid fa-bars"></i>
     </button>
-    <img class="header-mobile__logo" src="./assets/imgs/logoBranca.png" alt="">
+    <img class="header-mobile__logo" src="./assets/imgs/logo-minimal.png" alt="">
   </header>
   <header class="header-desktop">
     <div class="container">
@@ -70,22 +70,29 @@
     <section class="container sitio">
       <div class="text-block">
         <h2>O Sítio</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus arcu ben dum at varius. Ut porttitor leo a diam. Pe na tibus et magnis dis. Ut enim ad minim veniam, quis no strud ex ercitation ullamco laboris nisi ut aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit.
-        </p>
-        <p>
-          Excepteur sint occaecat cupidatat non proident. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue eget dolor.
-        </p>
+        <p class="subtitulo">Boutique Sitio Iezzi</p>
+        <p>Já pensou em um hotel 5 estrelas só para você e sua família, com um chef de cozinha exclusivo para vocês fazendo seu prato predileto, uma adega recheada com os melhores vinhos em um ambiente super luxuoso e sofisticado?</p>
+        <p>Esse é o nosso objetivo.</p>
+        <p>EXCLUSIVIDADE, PRIVACIDADE E SOFISTICAÇÃO.</p>
       </div>
       <div class="img-wrapper">
         <img class="img-ratio" src="./assets/imgs/image2.jpeg" alt="" srcset="">
       </div>
     </section>
     <div class="video"></div>
-    <div class="comentarios"></div>
+    <div class="comentarios">
+      <div class="container">
+        <div class="comentario">
+          <img src="./assets/imgs/profile-pic-placeholder.jpg" alt="" class="comentario__usuario-img">
+          <p class="text-center comentario__texto">Libero volutpat sed cras ornare arcu dui. Morbi tempus iaculis urna id volutpat. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Sit amet est placerat in egestas.</p>
+          <h5 class="comentario__usuario-nome">Amanda Smith</h5>
+        </div>
+      </div>
+    </div>
     <section class="galeria">
       <div class="container">
-        <h2>Galeria</h2>
+        <h2 class="text-center">Galeria</h2>
+        <p class="subtitulo text-center">Ut enim ad minim veniam quis nostrud</p>
         <div class="img-grid">
           <div class="img-grid__item"><img class="img-ratio" src="./assets/imgs/image1.jpeg" alt=""></div>
           <div class="img-grid__item"><img class="img-ratio" src="./assets/imgs/image2.jpeg" alt=""></div>
@@ -100,12 +107,9 @@
       <div class="container">
         <div class="text-block">
           <h2>O Espaço</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus arcu ben dum at varius. Ut porttitor leo a diam. Pe na tibus et magnis dis. Ut enim ad minim veniam, quis no strud ex ercitation ullamco laboris nisi ut aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit.
-          </p>
-          <p>
-            Excepteur sint occaecat cupidatat non proident. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue eget dolor.
-          </p>
+          <p class="subtitulo">A estrutura</p>
+          <p>O espaço todo tem próximo a 50.000m² e tem Heliponto com capacidade para dois helicópteros em solo e um para pouso rotativo. Estacionamento para aproximadamente 40 carros. Espaço para eventos com capacidade para 200 pessoas confortáveis.</p>
+          <p>Todos os nossos ambientes contam com internet de altíssima velocidade (1Gb de velocidade dedicada up e down), sistema de som profissional até debaixo da água da piscina, que estará aquecida a 32 graus! Nossa área de lazer conta com: além de nossa piscina com borda infinita, uma sauna a vapor, campo de futebol, meia quadra de basquete, cozinha gourmet e industrial profissional para grandes eventos ou chefs de alta gastronomia, churrasqueira de grande porte, bar equipado com chopeira de dois bicos de alta capacidade e com resfriamento como do Outback, adega com rótulos premiados nacionais e internacionais, tudo isso ao toque da tela de um tablet, que controlará desde a luz do banheiro a abrir a porta da adega subterrânea.</p>
         </div>
       </div>
     </section>
@@ -114,18 +118,27 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__logo">
-          <img src="./assets/imgs/logoPreta.png" alt="" srcset="">
+          <img src="./assets/imgs/logo-minimal.png" alt="" srcset="">
         </div>
         <div class="contato">
           <h3>Contatos</h3>
-          <div>
-            <span>Rua Moisés Amélio, 7 - Centro <br> Nova Friburgo, RJ, Brasil</span>
-          </div>
-          <div>
-            <span>contato@sitioiezzi.com.br</span>
-          </div>
-          <div>
-            <span>Telefone: (22) 2222 2222 <br> Whatsapp: (22) 99999 9999</span>
+          <a class="contato__info" href="shorturl.at/nAWX8">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span href="shorturl.at/nAWX8">
+              <p>Rua Moisés Amélio, 7 - Centro</p>
+              <p>Nova Friburgo, RJ, Brasil</p>
+            </span>
+          </a>
+          <a href="mailto:contato@sitioiezzi.com.br" class="contato__info">
+            <i class="fa-solid fa-envelope"></i>
+            <p>contato@sitioiezzi.com.br</p>
+          </a>
+          <div class="contato__info">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <div>
+              <p>Telefone: (22) 2222 2222</p>
+              <p>Whatsapp: (22) 99999 9999</p>
+            </div>
           </div> 
         </div>
         <div class="sobre-nos">

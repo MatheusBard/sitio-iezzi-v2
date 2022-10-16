@@ -5,6 +5,7 @@
   --clr-gray: #777;
   --clr-dark-gray: #333;
   --clr-black: #222;
+  --clr-orange: #c8693a;
 
   /* Fonts */
   --ff-main: 'Spectral', serif;
@@ -12,7 +13,7 @@
 
   /* Font Sizes */
   --fs-1: 1rem;
-  --fs-2: 2rem;
+  --fs-2: 1.5rem;
   --fs-3: 2.5rem;
 
   /* Spacing */
