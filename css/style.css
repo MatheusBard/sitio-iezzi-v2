@@ -170,28 +170,58 @@ h1, h2, h3, h4, h5 {
   background-size: cover;
 }
 
+.comentarios__wrapper {
+  position: relative;
+}
+
+.comentarios__wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: .6;
+  background-image: url('../assets/imgs/pastel-mosaic.jpg');
+}
+
 .comentario {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 6.25rem;
+  padding-bottom: 7.5rem;
 }
 
 .comentario__usuario-img {
   position: relative;
   width: 6.25rem;
+  margin-bottom: 2rem;
+}
+
+.comentario__usuario-img > img {  
   aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 60% 40% 60% 40%;
 }
 
 .comentario__usuario-img::before {
   content: '"';
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(-50%);
+  top: -1.5rem;
+  left: -1.5rem;
   font-size: 4.5rem;
+  font-family: 'Proza Libre', sans-serif;
   color: var(--clr-orange);
+}
+
+.comentario__texto {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.comentario__usuario-nome {
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 .galeria {
@@ -242,6 +272,7 @@ h1, h2, h3, h4, h5 {
 .subtitulo {
   margin-bottom: 1.5rem;
   font-size: 1.25rem;
+  font-style: italic;
   color: var(--clr-orange);
 }
 
