@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5 {
   content: '';
   position: absolute;
   inset: 0;
-  opacity: .6;
+  opacity: .4;
   background-image: url('../assets/imgs/pastel-mosaic.jpg');
 }
 
