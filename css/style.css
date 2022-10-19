@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5 {
   align-items: center;
 }
 
-.comentarios::before {
+#comentarios::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .comentario {
-  position: relative;
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 6.25rem;
@@ -282,54 +282,49 @@ h1, h2, h3, h4, h5 {
 }
 
 /* -- Bootstrap customizado -- */
-.carousel-item.active, 
-.carousel-item.carousel-item-start {
-  display: flex !important;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
+#comentarios > .carousel-control-next,
+#comentarios > .carousel-control-prev {
   display: none;
-  position: relative;
-  inset: auto;
   width: fit-content;
   font-size: 2rem;
   opacity: 1;
 }
 
-.carousel-control-next,
-.carousel-control-next:hover,
-.carousel-control-next:focus,
-.carousel-control-prev,
-.carousel-control-prev:hover,
-.carousel-control-prev:focus {
+#comentarios > .carousel-control-next,
+#comentarios > .carousel-control-next:hover,
+#comentarios > .carousel-control-next:focus,
+#comentarios > .carousel-control-prev,
+#comentarios > .carousel-control-prev:hover,
+#comentarios > .carousel-control-prev:focus {
   color: var(--clr-gray);
 }
 
-.carousel-control-next {
+#comentarios > .carousel-control-next {
+  padding-right: 2rem;
   transform: translateX(-25%);
   transition: transform 200ms ease-in-out;
 }
 
-.carousel-control-prev {
+#comentarios > .carousel-control-prev {
+  padding-left: 2rem;
   transform: translateX(25%);
   transition: transform 200ms ease-in-out;
 }
 
-.carousel-control-next:hover {
+#comentarios > .carousel-control-next:hover {
   transform: translateX(0%);
 }
 
-.carousel-control-prev:hover {
+#comentarios > .carousel-control-prev:hover {
   transform: translateX(0%);
 }
 
-.carousel-indicators [data-bs-target] {
+#comentarios > .carousel-indicators [data-bs-target] {
   height: 2px;
   background-color: var(--clr-gray);
 }
 
-.carousel-indicators [aria-current="true"] {
+#comentarios > .carousel-indicators [aria-current="true"] {
   background-color: var(--clr-orange);
 }
 /* --------------------------- */
@@ -381,6 +376,10 @@ h1, h2, h3, h4, h5 {
     flex-direction: row;
   }
 
+  .comentario {
+    --inline-padding: 5.25rem;
+  }
+
   .img-grid__item {
     width: 33.333%;
   }
@@ -390,8 +389,8 @@ h1, h2, h3, h4, h5 {
     flex-basis: 33.333%;
   }
 
-  .carousel-control-next,
-  .carousel-control-prev {
+  #comentarios > .carousel-control-next,
+  #comentarios > .carousel-control-prev {
     display: block;
   }
 }

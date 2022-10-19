@@ -83,40 +83,48 @@
       </div>
     </section>
     <div class="video"></div>
-    <div id="comentarios" class="container comentarios carousel slide" data-bs-ride="carousel">
+    <div id="comentarios" class="carousel slide" data-bs-ride="true">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#comentarios" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#comentarios" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#comentarios" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="comentario">
+            <div class="comentario__usuario-img">
+              <img src="./assets/imgs/profile-pic-placeholder.jpg" alt="">
+            </div>
+            <p class="text-center comentario__texto">Libero volutpat sed cras ornare arcu dui. Morbi tempus iaculis urna id volutpat. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Sit amet est placerat in egestas.</p>
+            <h5 class="comentario__usuario-nome">Amanda Smith</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="comentario">
+            <div class="comentario__usuario-img">
+              <img src="./assets/imgs/profile-pic-placeholder.jpg" alt="">
+            </div>
+            <p class="text-center comentario__texto">Libero volutpat sed cras ornare arcu dui. Morbi tempus iaculis urna id volutpat. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Sit amet est placerat in egestas.</p>
+            <h5 class="comentario__usuario-nome">Gertrudes Neves</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="comentario">
+            <div class="comentario__usuario-img">
+              <img src="./assets/imgs/profile-pic-placeholder.jpg" alt="">
+            </div>
+            <p class="text-center comentario__texto">Libero volutpat sed cras ornare arcu dui. Morbi tempus iaculis urna id volutpat. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Sit amet est placerat in egestas.</p>
+            <h5 class="comentario__usuario-nome">Penelope Charmosa</h5>
+          </div>
+        </div>
+      </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#comentarios" data-bs-slide="prev">
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
         <i class="fa-solid fa-arrow-left-long"></i>
         <span class="visually-hidden">Previous</span>
       </button>
-      <div class="carousel-inner">
-        <div class="comentario carousel-item active">
-          <div class="comentario__usuario-img">
-            <img src="./assets/imgs/profile-pic-placeholder.jpg" alt="">
-          </div>
-          <p class="text-center comentario__texto">Libero volutpat sed cras ornare arcu dui. Morbi tempus iaculis urna id volutpat. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Sit amet est placerat in egestas.</p>
-          <h5 class="comentario__usuario-nome">Amanda Smith</h5>
-        </div>
-        <div class="comentario carousel-item">
-          <div class="comentario__usuario-img">
-            <img src="./assets/imgs/profile-pic-placeholder.jpg" alt="">
-          </div>
-          <p class="text-center comentario__texto">Libero volutpat sed cras ornare arcu dui. Morbi tempus iaculis urna id volutpat. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Sit amet est placerat in egestas.</p>
-          <h5 class="comentario__usuario-nome">Gertrudes Neves</h5>
-        </div>
-        <div class="comentario carousel-item">
-          <div class="comentario__usuario-img">
-            <img src="./assets/imgs/profile-pic-placeholder.jpg" alt="">
-          </div>
-          <p class="text-center comentario__texto">Libero volutpat sed cras ornare arcu dui. Morbi tempus iaculis urna id volutpat. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Sit amet est placerat in egestas.</p>
-          <h5 class="comentario__usuario-nome">Penelope Charmosa</h5>
-        </div>
-      </div>
       <button class="carousel-control-next" type="button" data-bs-target="#comentarios" data-bs-slide="next">
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
         <i class="fa-solid fa-arrow-right-long"></i>
         <span class="visually-hidden">Next</span>
       </button>
