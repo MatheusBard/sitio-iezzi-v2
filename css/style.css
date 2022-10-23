@@ -141,6 +141,17 @@ h1, h2, h3, h4, h5 {
   height: 100%;
 }
 
+#showcase > .first-time-showing {
+  opacity: 0 !important;
+}
+
+#showcase > .carousel-control-next,
+#showcase > .carousel-control-prev {
+  display: none;
+  opacity: 1;
+  transition: opacity 600ms ease;
+}
+
 .showcase__bg {
   background-image: var(--showcase-img);
   background-position: center;
@@ -153,20 +164,15 @@ h1, h2, h3, h4, h5 {
   justify-content: center;
   align-items: center;
   height: 100%;
+  background: transparent;
+  opacity: 0;
   transform: scale(.8);
   transition: all 600ms ease;
 }
 
-.placeholder.showcase__txt{
-  opacity: 0;
-}
-
 .showcase__txt.start-animation {
-  transform: scale(1);
-}
-
-.placeholder.showcase__txt.start-animation {
   opacity: 1;
+  transform: scale(1);
 }
 
 .flex {
@@ -333,13 +339,13 @@ h1, h2, h3, h4, h5 {
 
 #comentarios > .carousel-control-next {
   padding-right: 2rem;
-  transform: translateX(-25%);
+  transform: translateX(-5%);
   transition: transform 200ms ease-in-out;
 }
 
 #comentarios > .carousel-control-prev {
   padding-left: 2rem;
-  transform: translateX(25%);
+  transform: translateX(5%);
   transition: transform 200ms ease-in-out;
 }
 
@@ -406,6 +412,15 @@ h1, h2, h3, h4, h5 {
 
   .showcase {
     height: 100vh;
+  }
+
+  #showcase > .carousel-indicators {
+    display: none;
+  }
+
+  #showcase > .carousel-control-next,
+  #showcase > .carousel-control-prev {
+    display: flex;
   }
 
   .sitio {
