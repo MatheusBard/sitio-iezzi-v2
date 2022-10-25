@@ -15,7 +15,7 @@ body {
 a, 
 a:hover,
 a:focus {
-  color: #fff;
+  color: var(--font-color);
   text-decoration: none;
 }
 
@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5 {
   display: inline-block;
   width: 0.5rem;
   height: 1px;
-  background-color: #fff;
+  background-color: var(--font-color);
   transform: scaleX(0);
   transition: 100ms ease-in-out;
 }
@@ -348,6 +348,10 @@ h1, h2, h3, h4, h5 {
   color: var(--clr-orange);
 }
 
+.dark-font {
+  --font-color: #000;
+}
+
 /* -- Bootstrap customizado -- */
 #comentarios > .carousel-control-next,
 #comentarios > .carousel-control-prev {
@@ -436,6 +440,18 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     width: 100%;
     height: var(--header-height-desktop);
+  }
+
+  #sliding-header.header-desktop {
+    position: fixed;
+    height: var(--header-height-slide);
+    background-color: var(--clr-light-gray);
+    transform: translateY(-100%);
+    transition: transform 250ms ease;
+  }
+
+  #sliding-header.header-desktop.test {
+    transform: translateY(0);
   }
 
   .header-desktop__logo {

@@ -7,6 +7,8 @@
   --clr-black: #222;
   --clr-orange: #c8693a;
 
+  --font-color: var(--clr-white);
+
   /* Fonts */
   --ff-main: 'Spectral', serif;
   --ff-title: 'Spectral SC', serif;
@@ -23,6 +25,7 @@
 
   /* Element Sizes */
   --header-height-desktop: 7.5rem;
+  --header-height-slide: 5rem;
   --header-height-mobile: 4.5rem;
 
 }
