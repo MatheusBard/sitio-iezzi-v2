@@ -70,6 +70,22 @@ h1, h2, h3, h4, h5 {
   color: var(--clr-gray);
 }
 
+.menu-mobile {
+  position: absolute;
+  top: var(--header-height-mobile);
+  left: 0;
+  right: 0;
+  max-height: 0;
+  background-image: url('../assets/imgs/img-noise-menu-mobile.png');
+  transition: max-height 600ms ease;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.menu-mobile.opened {
+  max-height: 20rem;
+}
+
 .header-mobile__logo {
   position: absolute;
   top: 50%;
@@ -133,6 +149,16 @@ h1, h2, h3, h4, h5 {
 .nav__item > a:focus::before,
 .nav__item > a:focus::after {
   transform: scaleX(1);
+}
+
+.menu-mobile .nav__list {
+  flex-direction: column;
+  width: 100%;
+  padding-block: 1.25rem;
+}
+
+.menu-mobile .nav__item > a {
+  padding-block: .5rem;
 }
 
 .showcase {
@@ -308,7 +334,7 @@ h1, h2, h3, h4, h5 {
 .footer {
   padding-top: 7.5rem;
   padding-bottom: 4rem;
-  background-image: url('../assets/imgs/img-noise.png');
+  background-image: url('../assets/imgs/img-noise-footer.png');
 }
 
 .footer__grid {
@@ -350,6 +376,10 @@ h1, h2, h3, h4, h5 {
 
 .dark-font {
   --font-color: #000;
+}
+
+.orange-font {
+  --font-color: var(--clr-orange);
 }
 
 /* -- Bootstrap customizado -- */
@@ -428,7 +458,8 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (min-width: 992px) {
-  .header-mobile {
+  .header-mobile,
+  .menu-mobile {
     display: none;
   }
   
