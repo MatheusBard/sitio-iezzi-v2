@@ -96,32 +96,33 @@
     <div class="container">
       <form action="email.php" method="POST">
         <div class="mb-3">
-          <label class="form-label">Nome</label>
-          <input type="text" class="form-control" name="nome">
+          <!-- <label class="form-label">Nome</label> -->
+          <input type="text" class="form-control" name="nome" placeholder="Nome..." required>
         </div>
         <div class="mb-3">
-          <label class="form-label">E-mail</label>
-          <input type="email" class="form-control" name="email">
+          <!-- <label class="form-label">E-mail</label> -->
+          <input type="email" class="form-control" name="email" placeholder="E-mail..." required>
         </div>
         <div class="mb-3">
-          <label class="form-label">Telefone</label>
-          <input type="text" class="form-control" name="telefone">
+          <!-- <label class="form-label">Telefone</label> -->
+          <input type="text" class="form-control" name="telefone" placeholder="Telefone..." required>
         </div>
         <div class="mb-3">
-          <label class="form-label">CPF</label>
-          <input type="text" class="form-control" name="cpf">
+          <!-- <label class="form-label">CPF</label> -->
+          <input type="text" class="form-control" name="cpf" placeholder="CPF..." required>
         </div>
         <div class="mb-3">
           <label class="form-label">Data</label>
-          <input type="date" class="form-control" name="data">
+          <input type="date" class="form-control" name="data" required>
         </div>
         <div class="mb-3">
-          <label class="form-label">Pessoas (Quantidade)</label>
-          <input type="number" class="form-control" name="quantidade">
+          <!-- <label class="form-label">Pessoas (Quantidade)</label> -->
+          <input type="number" class="form-control" name="quantidade" placeholder="Quantidade de Pessoas..." required>
         </div>
         <div class="mb-3">
           <label class="form-label">Tipo de evento</label>
-          <select class="form-select">
+          <select class="form-select" required>
+            <option value="">Escolha o Tipo de Evento...</option>
             <option value="aniversario">Aniversário</option>
             <option value="casamento">Casamento</option>
             <option value="bebe">Chá de Bebe</option>
@@ -130,20 +131,43 @@
           </select>
         </div>
         <div class="mb-3">
-          <label class="form-label">Descrição</label>
-          <textarea class="form-control" name="descricao">Descreva seu evento aqui...</textarea>
+          <!-- <label class="form-label">Descrição</label> -->
+          <textarea class="form-control" name="descricao" placeholder="Descreva o seu evento aqui..." required></textarea>
         </div>
       </form>
-      <!-- <div class="map-wrapper" style="height: 400px;">
-        <div id="googleMap" style="height: 100%; width: 100%;"></div>
-      </div> -->
+      
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=altarede nova friburgo&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+          <a href="https://piratebay-proxys.com/%22%3EPiratebay"</a>
+        </div>
+        <style>
+          .mapouter{
+            position:relative;
+            text-align:right;
+            width:100%;
+            height:400px;
+          }
+          .gmap_canvas {
+              overflow:hidden;
+              background:none!important;
+              width:100%;
+              height:400px;
+          }
+          .gmap_iframe {
+              height:400px!important;
+          }
+        </style>
+      </div>
+
     </div>
   </main>
   <footer id="contato" class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__logo">
-          <img src="../assets/imgs/logo-minimal.png" alt="" srcset="">
+          <img src="../assets/imgs/logos/logo-minimal.png" alt="" srcset="">
         </div>
         <div class="contato">
           <h3>Contatos</h3>
