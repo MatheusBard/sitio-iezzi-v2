@@ -1,8 +1,5 @@
 $(document).ready(function () {
-  
-  const menuToggle = document.getElementById('menu-toggle');
-  const menuMobile = document.getElementById('menu-mobile');
-  
+
   const slidingHeader = document.getElementById('sliding-header');
   const showcase = document.getElementById('showcase');
   const showcase__txt = document.querySelectorAll('.showcase__txt');
@@ -10,19 +7,14 @@ $(document).ready(function () {
 
   if(!!window.IntersectionObserver) {
     const showcaseObserver = new IntersectionObserver (entries => {
-      if(!entries[0].isIntersecting) slidingHeader.classList.add('test')
-      else slidingHeader.classList.remove('test');
+      if(!entries[0].isIntersecting) slidingHeader.classList.add('show')
+      else slidingHeader.classList.remove('show');
     }, {
       rootMargin: "-1px"
     });
 
     showcaseObserver.observe(showcase);
-  }
-
-  menuToggle.addEventListener('click', () => {
-    menuMobile.classList.toggle('opened');
-    console.log(menuMobile);
-  })
+  }  
 
   // Animação da primeira PALAVRA ao carregar a página
   setTimeout(() => {
