@@ -4,6 +4,7 @@
 .two-columns-desktop {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .two-columns-desktop > * {
@@ -13,6 +14,7 @@
 .mapouter{
   position:relative;
   text-align:right;
+  align-self: center;
   width:100%;
   height:600px;
 }

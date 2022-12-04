@@ -97,49 +97,49 @@
     <div class="banner-reservas">
     </div>
     <div class="container two-columns-desktop">
-      <form action="email.php" method="POST">
+      <form action="envio_email.php" method="POST">
         <h2>Faça sua Reserva</h2>
-        <p class="subtitulo">Lorem ipsum</p>
-        <div class="mb-3">
-          <!-- <label class="form-label">Nome</label> -->
-          <input type="text" class="form-control" name="nome" placeholder="Nome..." required>
-        </div>
-        <div class="mb-3">
-          <!-- <label class="form-label">E-mail</label> -->
-          <input type="email" class="form-control" name="email" placeholder="E-mail..." required>
-        </div>
-        <div class="mb-3">
-          <!-- <label class="form-label">Telefone</label> -->
-          <input type="text" class="form-control" name="telefone" placeholder="Telefone..." required>
-        </div>
-        <div class="mb-3">
-          <!-- <label class="form-label">CPF</label> -->
-          <input type="text" class="form-control" name="cpf" placeholder="CPF..." required>
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Data</label>
-          <input type="date" class="form-control" name="data" required>
-        </div>
-        <div class="mb-3">
-          <!-- <label class="form-label">Pessoas (Quantidade)</label> -->
-          <input type="number" class="form-control" name="quantidade" placeholder="Quantidade de Pessoas..." required>
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Tipo de evento</label>
-          <select class="form-select" required>
-            <option value="">Escolha o Tipo de Evento...</option>
-            <option value="aniversario">Aniversário</option>
-            <option value="casamento">Casamento</option>
-            <option value="bebe">Chá de Bebe</option>
-            <option value="revelacao">Chá de Revelação</option>
-            <option value="outro">Outro</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <!-- <label class="form-label">Descrição</label> -->
-          <textarea class="form-control" name="descricao" placeholder="Descreva o seu evento aqui..." required></textarea>
-        </div>
-      </form>
+        <p class="subtitulo">Preencha os dados para entrarmos em contato o mais breve possível</p>
+	    	<div class="mb-3">
+				<label class="form-label">Nome</label>
+				<input type="text" class="form-control" name="nome">
+			</div>
+			<div class="mb-3">
+				<label class="form-label">E-mail</label>
+				<input type="email" class="form-control" name="email">
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Telefone</label>
+				<input type="text" class="form-control" name="telefone">
+			</div>
+			<div class="mb-3">
+				<label class="form-label">CPF</label>
+				<input type="text" class="form-control" name="cpf">
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Data</label>
+				<input type="date" class="form-control" name="data">
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Pessoas (Quantidade)</label>
+				<input type="number" class="form-control" name="quantidade">
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Tipo de evento</label>
+				<select class="form-select" name="tipo">
+				  <option value="aniversario">Aniversário</option>
+				  <option value="casamento">Casamento</option>
+				  <option value="bebe">Chá de Bebe</option>
+				  <option value="revelacao">Chá de Revelação</option>
+				  <option value="outro">Outro</option>
+				</select>
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Descrição</label>
+				<textarea class="form-control" name="descricao" placeholder="Descreva seu evento aqui"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary" style="width:100%;">Enviar</button>
+		</form>
       
       <!-- Map iFrame from https://embed-google-maps.com/ -->
       <div class="mapouter">
