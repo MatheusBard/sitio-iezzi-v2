@@ -1,14 +1,93 @@
-.banner-reservas {
-  margin-bottom: 4rem;
+.parallax__wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
 }
+
+.banner-reservas {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height:25rem;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.banner-reservas__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--clr-black);
+  opacity: .5;
+}
+
+.parallax {
+  object-fit: cover;
+}
+
+.no-parallax {
+  position: absolute;
+  z-index: 1;
+}
+
+.form-label {
+  margin: 0;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--clr-orange);
+  box-shadow: none;
+}
+
 .two-columns-desktop {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
+.two-columns-desktop--contato-page {
+  padding-block: 3.75rem;
+}
+
 .two-columns-desktop > * {
   flex-basis: 100%;
+}
+
+.btn-reservar {
+  --btn-timing: 300ms;
+
+  position: relative;
+  padding: 0.625em 1.875em;
+  border: none;
+  border-radius: 1.875em;
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+  font-weight: var(--fw-700);
+  cursor: pointer;
+  transition: transform var(--btn-timing) ease-in-out;
+}
+
+.btn-reservar::after {
+  /* Optimal box-shadow animation */
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 1.875em;
+  -webkit-box-shadow: 0px 5px 10px 0px var(--clr-gray);
+  box-shadow: 0px 5px 10px 0px var(--clr-gray);
+  opacity: 0.3;
+  transition: opacity var(--btn-timing) ease-in-out;
+}
+.btn-reservar:hover,
+.btn-reservar:focus {
+  transform: translateY(-0.125rem);
+}
+.btn-reservar:hover::after,
+.btn-reservar:focus::after {
+  opacity: 0.8;
 }
 
 .mapouter{
@@ -26,6 +105,12 @@
 }
 .gmap_iframe {
     height:600px!important;
+}
+
+@media (min-width: 992px) {
+  .banner-reservas {
+    max-height: 30rem;
+  }
 }
 
 @media (min-width: 1200px) {
