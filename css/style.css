@@ -248,12 +248,12 @@ h1, h2, h3, h4, h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 30rem;
   padding-top: 6.25rem;
   padding-bottom: 7.5rem;
 
   --inline-padding: 2rem;
-  padding-left: var(--inline-padding);
-  padding-right: var(--inline-padding);
+  padding-inline: var(--inline-padding);
 }
 
 .comentario__usuario-img {
@@ -324,8 +324,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .footer {
-  padding-top: 7.5rem;
-  padding-bottom: 4rem;
+  padding-block: 4rem;
   background-image: url('../assets/imgs/img-noise-footer.png');
 }
 
@@ -475,7 +474,7 @@ h1, h2, h3, h4, h5 {
 
     height: calc(var(--header-height-desktop) + var(--padding-bottom));
     padding-bottom: var(--padding-bottom);
-    
+
     background-image: linear-gradient(#000, transparent);
   }
 

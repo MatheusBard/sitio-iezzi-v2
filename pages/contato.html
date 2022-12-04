@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="../css/andy-modern-css-reset.css">
   <link rel="stylesheet" href="../css/variables.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contato-page.css">
 
   <title>Reservas</title>
 </head>
@@ -25,7 +26,7 @@
     <button id="menu-toggle" class="menu-toggle">
       <i class="fa-solid fa-bars"></i>
     </button>
-    <img class="header-mobile__logo" src="../assets/imgs/logo-minimal.png" alt="">
+    <img class="header-mobile__logo" src="../assets/imgs/logos/logo iezzi prt.png" alt="">
   </header>
   <div id="menu-mobile" class="menu-mobile">
     <div class="container">
@@ -94,10 +95,11 @@
   </header>
   <main>
     <div class="banner-reservas">
-
     </div>
-    <div class="container">
+    <div class="container two-columns-desktop">
       <form action="email.php" method="POST">
+        <h2>Faça sua Reserva</h2>
+        <p class="subtitulo">Lorem ipsum</p>
         <div class="mb-3">
           <!-- <label class="form-label">Nome</label> -->
           <input type="text" class="form-control" name="nome" placeholder="Nome..." required>
@@ -143,28 +145,9 @@
       <div class="mapouter">
         <div class="gmap_canvas">
           <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=altarede nova friburgo&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-          <a href="https://piratebay-proxys.com/%22%3EPiratebay">
+            src="https://maps.google.com/maps?width=600&amp;height=600&amp;hl=en&amp;q=altarede nova friburgo&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
-        <style>
-          .mapouter{
-            position:relative;
-            text-align:right;
-            width:100%;
-            height:400px;
-          }
-          .gmap_canvas {
-              overflow:hidden;
-              background:none!important;
-              width:100%;
-              height:400px;
-          }
-          .gmap_iframe {
-              height:400px!important;
-          }
-        </style>
       </div>
-
     </div>
   </main>
   <footer id="contato" class="footer">
@@ -175,24 +158,16 @@
         </div>
         <div class="contato">
           <h3>Contatos</h3>
-          <a class="contato__info" href="">
+          <a href="#" class="contato__info">
+            <i class="fa-solid fa-envelope"></i>
+            <p>Reservas</p>
+          </a>
+          <a class="contato__info" href="https://www.google.com/maps/search/altarede+nova+friburgo/@-22.287535,-42.531409,14z?hl=en" target="_blank">
             <i class="fa-solid fa-map-location-dot"></i>
             <span>
-              <p>Rua Moisés Amélio, 7 - Centro</p>
-              <p>Nova Friburgo, RJ, Brasil</p>
+              <p>Localização</p>
             </span>
           </a>
-          <a href="mailto:contato@sitioiezzi.com.br" class="contato__info">
-            <i class="fa-solid fa-envelope"></i>
-            <p>contato@sitioiezzi.com.br</p>
-          </a>
-          <div class="contato__info">
-            <i class="fa-solid fa-mobile-screen"></i>
-            <div>
-              <p>Telefone: (22) 2222 2222</p>
-              <p>Whatsapp: (22) 99999 9999</p>
-            </div>
-          </div> 
         </div>
         <div class="sobre-nos">
           <h3>Sobre Nós</h3>
@@ -212,6 +187,5 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script> -->
 
   <script src="../js/menu.js"></script>
-  <script src="../js/map.js"></script>
 </body>
 </html>
