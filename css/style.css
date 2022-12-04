@@ -342,6 +342,12 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 1.5rem;
 }
 
+.footer__logo > img {
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
 .contato__info {
   display: flex;
   align-items: center;
@@ -444,9 +450,8 @@ h1, h2, h3, h4, h5 {
   }
 
   .footer__logo > img {
-    margin-left: auto;
-    margin-right: auto;
-  }  
+    width: 66.66%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -463,6 +468,15 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     width: 100%;
     height: var(--header-height-desktop);
+  }
+
+  .header-desktop.header-desktop--shadow {
+    --padding-bottom: 2rem;
+
+    height: calc(var(--header-height-desktop) + var(--padding-bottom));
+    padding-bottom: var(--padding-bottom);
+    
+    background-image: linear-gradient(#000, transparent);
   }
 
   #sliding-header.header-desktop {
