@@ -7,6 +7,9 @@
 
 .banner-reservas {
   position: relative;
+  display: -webki-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +27,7 @@
 }
 
 .parallax {
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -43,6 +47,9 @@
 }
 
 .two-columns-desktop {
+  display: -webki-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -83,6 +90,8 @@
 }
 .btn-reservar:hover,
 .btn-reservar:focus {
+  -webkit-transform: translateY(-0.125rem);
+  -ms-transform: translateY(-0.125rem);
   transform: translateY(-0.125rem);
 }
 .btn-reservar:hover::after,
