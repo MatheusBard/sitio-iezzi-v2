@@ -7,7 +7,7 @@
 
 .banner-reservas {
   position: relative;
-  display: -webki-box;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -47,7 +47,7 @@
 }
 
 .two-columns-desktop {
-  display: -webki-box;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
