@@ -27,6 +27,10 @@ h2 {
   font-size: var(--fs-3);
 }
 
+a > h2 {
+  color: var(--clr-black);
+}
+
 h3 {
   font-size: var(--fs-2);
   margin-bottom: 1rem;
@@ -377,6 +381,20 @@ h1, h2, h3, h4, h5 {
   padding-bottom: 6.25rem;
 }
 
+.youtube-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.youtube-video__wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin-block: 5rem;
+}
+
 .servicos-grid {
   display: -webki-box;
   display: -ms-flexbox;
@@ -668,6 +686,10 @@ h1, h2, h3, h4, h5 {
   #destaques .text-block {
     order: 2;
     padding-bottom: 5rem;
+  }
+
+  .youtube-video__wrapper {
+    margin: auto;
   }
 
   .img-grid__item {
