@@ -30,7 +30,7 @@
   <div id="menu-mobile" class="menu-mobile">
     <div class="container">
       <nav class="nav-wrapper">
-        <ul class="nav__list">
+        <ul id="sub-menu-mobile" class="nav__list accordion">
           <li class="nav__item">
             <a href="#showcase" class="orange-font"><span>Home</span></a>
           </li>
@@ -41,10 +41,52 @@
             <a href="#destaques" class="orange-font"><span>Destaques</span></a>
           </li>
           <li class="nav__item">
-            <a href="#espaco" class="orange-font"><span>O Espaço</span></a>
+            <div id="espacoTitle">
+              <button  class="orange-font accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#espacoMenu" aria-expanded="true" aria-controls="espacoMenu">
+                O Espaço
+              </button>
+            </div>
+            <ul id="espacoMenu" class="sub-menu-mobile accordion-collapse collapse" aria-labelledby="espacoTitle" data-bs-parent="#sub-menu-mobile">
+              <li class="sub-menu__item">
+                <a href="">Cozinha</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="">Piscina</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="">Heliponto</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="">Adega</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="">Mirante</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="">Estrutura</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="">Obras</a>
+              </li>
+            </ul>
           </li>
           <li class="nav__item">
-            <a href="#experiencias" class="orange-font"><span>Experiências</span></a>
+            <div id="experienciasTitle">
+              <button  class="orange-font accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#experienciasMenu" aria-expanded="true" aria-controls="experienciasMenu">
+                Experiências
+              </button>
+            </div>
+            <ul id="experienciasMenu" class="sub-menu-mobile accordion-collapse collapse" aria-labelledby="experienciasTitle" data-bs-parent="#sub-menu-mobile">
+              <li class="sub-menu__item">
+                <a href="">Aniversários</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="">Casamentos</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="">Reveillón</a>
+              </li>
+            </ul>
           </li>
           <li class="nav__item">
             <a href="#contato" class="orange-font"><span>Contato</span></a>
@@ -80,9 +122,43 @@
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#espaco"><span>O Espaço</span></a>
+              <ul class="sub-menu-desktop">
+                <li class="sub-menu__item">
+                  <a href="">Cozinha</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Piscina</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Heliponto</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Adega</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Mirante</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Estrutura</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Obras</a>
+                </li>
+              </ul>
             </li>
             <li class="nav__item">
               <a href="#experiencias"><span>Experiências</span></a>
+              <ul class="sub-menu-desktop">
+                <li class="sub-menu__item">
+                  <a href="">Aniversários</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Casamentos</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Reveillón</a>
+                </li>
+              </ul>
             </li>
             <li class="nav__item">
               <a href="#contato"><span>Contato</span></a>
@@ -119,9 +195,43 @@
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#espaco" class="dark-font"><span>O Espaço</span></a>
+              <ul class="sub-menu-desktop">
+                <li class="sub-menu__item">
+                  <a href="">Cozinha</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Piscina</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Heliponto</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Adega</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Mirante</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Estrutura</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Obras</a>
+                </li>
+              </ul>
             </li>
             <li class="nav__item">
               <a href="#experiencias" class="dark-font"><span>Experiências</span></a>
+              <ul class="sub-menu-desktop">
+                <li class="sub-menu__item">
+                  <a href="">Aniversários</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Casamentos</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="">Reveillón</a>
+                </li>
+              </ul>
             </li>
             <li class="nav__item">
               <a href="#contato" class="dark-font"><span>Contato</span></a>
