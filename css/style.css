@@ -302,6 +302,10 @@ h1, h2, h3, h4, h5 {
   object-fit: cover;
 }
 
+.img-ratio .img-ratio--16-9 {
+  aspect-ratio: 16/9;
+}
+
 .comentarios {
   display: -webki-box;
   display: -ms-flexbox;

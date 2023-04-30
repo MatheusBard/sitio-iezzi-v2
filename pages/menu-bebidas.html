@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&family=Spectral+SC:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/andy-modern-css-reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contato-page.css">
+
+  <title>Menu</title>
+</head>
+<body>
+  <div class="parallax__wrapper">
+    <header class="header-mobile container">
+      <button id="menu-toggle" class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <img class="header-mobile__logo" src="../assets/imgs/logos/logo iezzi prt.png" alt="">
+    </header>
+    <div id="menu-mobile" class="menu-mobile">
+      <div class="container">
+        <nav class="nav-wrapper">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="../index.html" class="orange-font"><span>Home</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="../index.html#sitio" class="orange-font"><span>O Sítio</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="../index.html#destaques" class="orange-font"><span>Destaques</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="../index.html#espaco" class="orange-font"><span>O Espaço</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="../index.html#experiencias" class="orange-font"><span>Experiências</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="../index.html#contato" class="orange-font"><span>Contato</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <header id="sliding-header" class="header-desktop show">
+      <div class="container">
+        <div class="nav-wrapper">
+          <nav class="nav nav--left">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="../index.html" class="dark-font"><span>Home</span></a>
+              </li>
+              <li class="nav__item">
+                <a href="../index.html#sitio" class="dark-font"><span>O Sítio</span></a>
+              </li>
+              <li class="nav__item">
+                <a href="../index.html#destaques" class="dark-font"><span>Destaques</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <a class="header-desktop__logo" href="">
+        <img src="../assets/imgs/logos/logo iezzi prt.png" alt="">
+      </a>
+      <div class="container">
+        <div class="nav-wrapper">
+          <nav class="nav nav--right">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="../index.html#espaco" class="dark-font"><span>O Espaço</span></a>
+              </li>
+              <li class="nav__item">
+                <a href="../index.html#experiencias" class="dark-font"><span>Experiências</span></a>
+              </li>
+              <li class="nav__item">
+                <a href="../index.html#contato" class="dark-font"><span>Contato</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="banner-subpage">
+        <div class="banner-subpage__overlay"></div>
+        <img src="../assets/imgs/reservas/reservas_mobilie_background.png" alt="" class="parallax"
+          srcset="
+            ../assets/imgs/reservas/reservas_mobilie_background.png 1280w,
+            ../assets/imgs/reservas/Reservas.JPG 5760w"
+          sizes="(min-width: 992px) 5760px, 1280px">
+        <img src="../assets/imgs/menu/h1-menu-mobile-text.png" alt="" class="no-parallax"
+          srcset="
+            ../assets/imgs/menu/h1-menu-mobile-text.png 285w,
+            ../assets/imgs/menu/h1-menu-text.png 619w"
+          sizes="(min-width: 992px) 619px, 285px">
+      </div>
+      <div class="container two-columns-desktop--subpage">
+        <h2>Vinhos e Champagnes</h2>
+        <p class="subtitulo">Confira nossa ampla variedade de bebidas requintados</p>
+        <div id="espumante-champagne">
+          <h3>Espumante/Champagne</h3>
+          <div class="two-columns-card-grid">
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Espumante Chandon Brut</h4>
+                <p class="bebida-descricao">Um vinho espumante clássico vibrante e vivo. Refrescante, frutado e fácil de beber. Aromas elegantes e nítidos, com notas de frutas cítricas, frutas secas, flores brancas e toques de pão fresco.</p>
+                <span class="bebida-valor">R$ 120,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/chandon-brut.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Champagne Möet Chandon Brut</h4>
+                <p class="bebida-descricao">Sua cor é amarela dourada com reflexos verdes. Seu aroma é composto pela intensidade picante da maçã verde e das frutas cítricas, com frescor de nuances minerais e flores.</p>
+                <span class="bebida-valor">R$ 599,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/moet-chandon-brut.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Champagne Dom Perignon Brut</h4>
+                <p class="bebida-descricao">Depressa faz sentir a sua presença cheia, rica e maciça. A maturação suculenta domina, e uma sensação tátil segue-se à experiência aromática. Na boca é generoso, firme e assertivo. Depois adensa-se, libertando vibrações apimentadas de especiarias.</p>
+                <span class="bebida-valor">R$ 2.340,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/dom-perignon-brut.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Champagne Cristal Brut Louis Roederer</h4>
+                <p class="bebida-descricao">Complexo, elegante e cremoso, revela notas de amêndoas, avelãs, além de toques de brioches e pão tostado.</p>
+                <span class="bebida-valor">R$ 3.900,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/cristal-brut-louis-roederer.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Champagne Veuve Clicquot Brut</h4>
+                <p class="bebida-descricao">Cor amarela dourada, a sua complexidade aromática é instantaneamente percebida em suas notas de frutas amarelas e brancas, complementadas pelas notas de baunilha e brioche.</p>
+                <span class="bebida-valor">R$ 750,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/veuve-clicquot-brut.jpeg" alt="" class="parallax">
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div id="vinho-tinto">
+          <h3>Vinho Tinto</h3>
+          <div class="two-columns-card-grid">
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Brunilde di Menzione - Primitivo di Manduria 2018</h4>
+                <p class="bebida-descricao">Belíssimo Primitivo di Manduria, apresenta uma coloração rubi escura, com lágrimas grossas e lentas. Nos aromas ameixas-pretas, cerejas e baunilha.</p>
+                <span class="bebida-valor">R$ 298,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/brunilde-di-menzione-primitivo-di-manduria-2018.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">San Marzano 60 Sessantanni - Primitivo di Manduria 2017</h4>
+                <p class="bebida-descricao">Com aromas de geleia de ameixa e cereja que logo evoluem para notas de tabaco e especiarias, encorpado, em boca deixa um rastro de cacau, café e baunilha. Vai evoluindo na taça diante de nossos olhos. Com certeza uma experiência inesquecível.</p>
+                <span class="bebida-valor">R$ 598,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/San-Marzano-60-Sessantanni-Primitivo-di-Manduria-2017.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Pazzia- Primitivo di Manduria Old Vines 2017</h4>
+                <p class="bebida-descricao">Produzido com uma uva primitiva, apresenta coloração rubi intensa com reflexos violáceos, no nariz revela aroma de frutas vermelhas, como ameixa e cereja, notas de tabaco e nuances de especiarias, bom corpo, taninos refinados e um final longo e persistente.</p>
+                <span class="bebida-valor">R$ 400,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/Pazzia-Primitivo-di-Manduria-Old-Vines-2017.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Dal 1947 Terre Di San Vicente- Primitivo di Manduria 2016/2017</h4>
+                <p class="bebida-descricao">De vinhedos selecionados na região de manduria, na Puglia o Dal 1947 amadurece por 10 meses em barricas de Carvalho. De coloração rubi com reflexos púrpura, aroma de frutas negras maduras e toque de especiarias, encorpado com taninos macios e retrogosto persistente.</p>
+                <span class="bebida-valor">R$ 455,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/Dal-1947-Terre-Di-San-Vicente-Primitivo-di-Manduria-2016-2017.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Primitivo Salento Torcicoda 2018</h4>
+                <p class="bebida-descricao">Leve, alegre, frutado e muito saboroso, cor rubi intensa, aromas de cereja negra e mirtilo, com toque de especiarias e alcaçuz. Na boca é macio e potente com taninos redondos.</p>
+                <span class="bebida-valor">R$ 340,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/Primitivo-Salento-Torcicoda-2018.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Taapacá gran reserva Cabernet Sauvignon</h4>
+                <p class="bebida-descricao">O Vinho Tarapacá Gran Reserva Cabernet Sauvignon é estruturado, com corpo médio, taninos maduros e macios e boa amplitude. Muito saboroso, também é dominado, na boca, pelos aromas frutados.</p>
+                <span class="bebida-valor">R$ 170,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/Taapaca-gran-reserva-Cabernet-Sauvignon.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Sampa Reserva - Marselan</h4>
+                <p class="bebida-descricao">Este vinho de coloração vermelho rubi intenso, límpido e brilhante, apresenta aromas de frutas vermelhas, pimenta negra e mentolado. Em boca revela bom corpo, com final de boca persistente e taninos macios.</p>
+                <span class="bebida-valor">R$ 250,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/Sampa-Reserva-Marselan.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Gran Enemigo Single Vineyard Guatallary - Cabernet Franc 2016</h4>
+                <p class="bebida-descricao">Agrelo é roxo escuro com reflexos vermelhos. Seus aromas são intensos e elegantes. Cabernet Franc traz notas leves de eucalipto e tomilho. Malbec traz notas de frutas pretas maduras, amoras e cerejas pretas. O envelhecimento em carvalho dá um toque de chocolate e baunilha para misturar.</p>
+                <span class="bebida-valor">R$ 950,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/Gran-Enemigo-Single-Vineyard-Guatallary-Cabernet-Franc-2016.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">1000 Stories Zinfandel 2018</h4>
+                <p class="bebida-descricao">Cada lote é criado individualmente e é único em seu perfil final. Envelhecimento em barris de bourbon transmite características de baunilha carbonizada e ervas secas.</p>
+                <span class="bebida-valor">R$ 400,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/1000-Stories-Zinfandel-2018.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Blu Onice Aglianico Irpinia 2019</h4>
+                <p class="bebida-descricao">Este é um vinho fora da curva, nascido em solos vulcânicos, que se expressa com um bouquet ultra-potente, com diversas camadas que dedilham as frutas negras, amoras selvagens, almíscar, caça, ervas mediterrâneas, baunilha e especiarias marrons.</p>
+                <span class="bebida-valor">R$ 350,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/Blu-Onice-Aglianico-Irpinia-2019.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Cantine di Ora Amicone - Blend 2017</h4>
+                <p class="bebida-descricao">Caracterizado por intenso aroma a framboesa e cereja preta. Na boca é encorpado, macio e aveludado, com notas de especiarias e chocolate.</p>
+                <span class="bebida-valor">R$ 290,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/Cantine-di-Ora-Amicone-Blend-2017.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Cartuxa Pêra-Manca Tinto 2010 - Aragonez, Trincadeira</h4>
+                <p class="bebida-descricao">Coloração granada. Aroma intenso e elegante com notas de frutos do bosque, pimenta rosa e ameixa seca. Suaves notas de regaliz. Na boca é poderoso, grande estrutura, concentrado e fresco. Final de boca muito longo a frutos secos e chocolate preto.</p>
+                <span class="bebida-valor">R$ 5.500,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/Cartuxa-Pera-Manca-Tinto-2010-Aragonez-Trincadeira.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Alma Viva 2008</h4>
+                <p class="bebida-descricao">De uma ótima safra um super equilibrado blend contendo Cabernet Sauvignon, Carmenére e Cabernet Franc. Possui cor rubi muito escuro, nariz complexo, com aroma de frutas vermelhas maduras, especiarias e café. Na boca ótimo acidez,e final longo.</p>
+                <span class="bebida-valor">R$ 6.980,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/Alma-Viva-2008.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Calcu Reserva Especial Assemblage</h4>
+                <p class="bebida-descricao">Rubi aveludado claro e intenso. Ameixa fresca, baunilha, madeira tostada, cereja e amora. Aroma limpo e acentuado. Seco, acidez média, taninos médios e médio corpo. Final longo.</p>
+                <span class="bebida-valor">R$ 150,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/Calcu-Reserva-Especial-Assemblage.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="vinho-rose">
+          <h3>Vinho Rose</h3>
+          <div class="two-columns-card-grid">
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Amitié Vinho Rosé Colheita de Primavera Tempranillo 2020</h4>
+                <p class="bebida-descricao">O vinho Rosé Amitié Colheita de Primavera da vinícola Amitié é composto 100% por uvas Tempranillo provenientes do Vale do São Francisco, em Pernambuco. É um vinho frutado, refrescante, de acidez equilibrada e harmoniosa.</p>
+                <span class="bebida-valor">R$ 140,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/Amitie-Vinho-Rose-Colheita-de-Primavera-Tempranillo-2020.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div id="vinho-branco">
+          <h3>Vinho Branco</h3>
+          <div class="two-columns-card-grid">
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Angelica Zapata Chardonnay 2018</h4>
+                <p class="bebida-descricao">Fermentação em barricas de carvalho francês, com leveduras selecionadas e temperatura controlada por 20 dias. Aromas de maçã verde, gramíneas e toques salinos. No paladar Frutas cítricas, limão, maçã verde e final de boca mineral.</p>
+                <span class="bebida-valor">R$ 350,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/Angelica-Zapata-Chardonnay-2018.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+            <div class="card-bebida">
+              <div class="bebida-info">
+                <h4 class="bebida-nome">Familia Deicas Preludio 2017</h4>
+                <p class="bebida-descricao">Constitue uma textura concentrada e agradável, composta por uma completa variedade aromática de figos secos, frutas vermelhas maduras e baunilha, gerando um paladar ácido e redondo na boca.</p>
+                <span class="bebida-valor">R$ 350,00</span>
+              </div>
+              <div class="bebida-img">
+                <img src="../assets/imgs/menu/bebidas/Familia-Deicas-Preludio-2017.jpeg" alt="" class="parallax">
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </main>
+    <footer id="contato" class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__logo">
+            <img src="../assets/imgs/logos/logo iezzi prt.png" alt="" srcset="">
+          </div>
+          <div class="contato">
+            <h3>Contatos</h3>
+            <a href="#" class="contato__info">
+              <i class="fa-solid fa-envelope"></i>
+              <p>Reservas</p>
+            </a>
+            <a class="contato__info" href="https://www.google.com/maps/search/altarede+nova+friburgo/@-22.287535,-42.531409,14z?hl=en" target="_blank">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <span>
+                <p>Localização</p>
+              </span>
+            </a>
+          </div>
+          <div class="sobre-nos">
+            <h3>Sobre Nós</h3>
+            Nossa história (em breve)<br>
+            <p>O sitio fica entre as montanhas da região serrana do Rio de Janeiro, na cidade de Bom Jardim a 25km de Nova Friburgo. Próximo a Lumiar e São Pedro, lugares muito conhecidos pelo charme, gastronomia e segurança.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap - JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- jQuery - Minified -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- jQuery Mask Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+  <script src="../js/menu.js"></script>
+</body>
+</html>

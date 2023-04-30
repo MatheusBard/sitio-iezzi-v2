@@ -38,4 +38,39 @@ $(document).ready(function () {
   showcase.addEventListener('slid.bs.carousel', e => {
     showcase__txt[e.from].classList.remove('start-animation');
   });
+
+
+  $('img[data-enlarge]').click(function() {
+    let src = $(this).attr('src');
+    let modal;
+  
+    function removeModal() {
+      modal.remove();
+      $('body').off('keyup.modal-close');
+    }
+    modal = $('<div>').css({
+      backgroundColor: 'rgba(0,0,0,.75)',
+      backgroundImage: 'url("' + src + '")',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundSize: 'contain',
+      width: '100%',
+      height: '100%',
+      position: 'fixed',
+      zIndex: '10000',
+      top: '0',
+      left: '0',
+      cursor: 'zoom-out'
+    }).click(function() {
+      console.log(src);
+      removeModal();
+    }).appendTo('body');
+    
+    //handling ESC
+    $('body').on('keyup.modal-close', function(e) {
+      if (e.key === 'Escape') {
+        removeModal();
+      }
+    });
+  });
 });

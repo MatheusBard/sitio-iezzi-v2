@@ -5,7 +5,7 @@
   perspective: 10px;
 }
 
-.banner-reservas {
+.banner-subpage {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,7 +19,7 @@
   z-index: -1;
 }
 
-.banner-reservas__overlay {
+.banner-subpage__overlay {
   position: absolute;
   inset: 0;
   background-color: var(--clr-black);
@@ -35,6 +35,56 @@
   position: absolute;
   z-index: 1;
 }
+
+.two-columns-card-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.card-bebida {
+  display: flex;
+  padding: 1rem;
+  border: 1px solid #ced4da;
+}
+
+.bebida-nome,
+.bebida-descricao {
+  margin-bottom: .5rem;
+}
+
+.bebida-info {
+  flex: 1;
+}
+
+.bebida-nome {
+  font-size: 1.25rem;
+  letter-spacing: 0;
+}
+
+.bebida-valor {
+  font-size: 1.25rem;
+  color: var(--clr-black);
+}
+
+.bebida-img {
+  width: 5rem;
+  height: 10rem;
+  align-self: center;
+  overflow-x: hidden;
+}
+
+.bebida-img > img {
+  height: 100%;
+  margin-inline: auto;
+}
+
+#espumante-champagne,
+#vinho-tinto,
+#vinho-rose,
+#vinho-branco {
+  padding-block: 2rem;
+}
+
 
 .form-label {
   margin: 0;
@@ -55,7 +105,7 @@
   gap: 2rem;
 }
 
-.two-columns-desktop--contato-page {
+.two-columns-desktop--subpage {
   padding-block: 3.75rem;
 }
 
@@ -117,8 +167,16 @@
 }
 
 @media (min-width: 992px) {
-  .banner-reservas {
+  .banner-subpage {
     max-height: 30rem;
+  }
+  .two-columns-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .bebida-img {
+    width: 8rem;
+    height: 16rem;
   }
 }
 
